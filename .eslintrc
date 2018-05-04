@@ -1,0 +1,21 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+      ],
+  "plugins": [ "flowtype"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  rules:{
+    "no-console": [0], // disallow use of console (off by default in the node environment)
+  }
+}

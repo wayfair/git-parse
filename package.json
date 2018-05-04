@@ -1,0 +1,62 @@
+{
+  "name": "git-parse",
+  "version": "1.0.2",
+  "description": "Turn a git repository into a javascript object.",
+  "main": "dist",
+  "scripts": {
+    "test": "jest",
+    "build": "node ./scripts/compile-src"
+  },
+  "author": "",
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "byline": "5.0.0",
+    "util.promisify": "1.0.0"
+  },
+  "license": "BSD-2-Clause",
+  "contributors": [
+    {
+      "name": "Suzi Curran",
+      "email": "sucurran@wayfair.com"
+    },
+    {
+      "name": "Morgan Packard",
+      "email": "mpackard@wayfair.com"
+    },
+    {
+      "name": "Ezra Skolnik",
+      "email": "eskolnik@wayfair.com"
+    },
+    {
+      "name": "Sandy Suh",
+      "email": "asuh@wayfair.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wayfair/git-parse"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-es2015-without-strict": "0.0.4",
+    "babel-preset-flow": "6.23.0",
+    "eslint": "4.19.1",
+    "eslint-plugin-flowtype": "2.46.3",
+    "eslint-plugin-import": "2.8.0",
+    "flow-bin": "0.63.1",
+    "flow-copy-source": "1.3.0",
+    "inquirer": "5.2.0",
+    "jest": "22.1.4",
+    "lerna": "2.6.0",
+    "lodash": "4.17.5",
+    "minimist": "1.2.0",
+    "nock": "9.1.6",
+    "prettier": "1.11.1"
+  },
+  "files": [
+    "dist"
+  ]
+}

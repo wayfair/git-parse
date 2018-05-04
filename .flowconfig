@@ -1,0 +1,7 @@
+[include]
+[libs]
+[lints]
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+[strict]
