@@ -9,7 +9,6 @@
   },
   "author": "",
   "dependencies": {
-    "babel-polyfill": "6.26.0",
     "byline": "5.0.0",
     "util.promisify": "1.0.0"
   },
@@ -59,5 +58,7 @@
   "files": [
     "dist"
   ],
-  "keywords": ["git"]
+  "keywords": [
+    "git"
+  ]
 }
