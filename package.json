@@ -9,6 +9,7 @@
   },
   "author": "",
   "dependencies": {
+    "@babel/preset-env": "^7.8.7",
     "byline": "5.0.0",
     "util.promisify": "1.0.0"
   },
@@ -36,12 +37,10 @@
     "url": "https://github.com/wayfair/git-parse"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-flow": "^7.8.3",
     "babel-eslint": "8.2.1",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-preset-es2015-without-strict": "0.0.4",
-    "babel-preset-flow": "6.23.0",
     "eslint": "4.19.1",
     "eslint-plugin-flowtype": "2.46.3",
     "eslint-plugin-import": "2.8.0",

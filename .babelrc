@@ -1,4 +1,4 @@
 {
-    presets: ['flow', 'es2015-without-strict'],
-    plugins: ['transform-object-rest-spread', 'transform-class-properties']
+    presets: ['@babel/preset-env','@babel/preset-flow'],
+    plugins: []
 }
