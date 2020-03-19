@@ -1,4 +1,14 @@
 {
-    presets: ['flow', 'es2015-without-strict'],
-    plugins: ['transform-object-rest-spread', 'transform-class-properties']
+    presets: [
+        '@babel/preset-flow',
+        ["@babel/preset-env", {
+            targets: {
+                node: 8,
+            }
+        }]
+    ],
+    plugins: [
+        '@babel/plugin-proposal-object-rest-spread',
+        '@babel/plugin-proposal-class-properties'
+    ]
 }
