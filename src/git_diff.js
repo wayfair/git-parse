@@ -10,7 +10,7 @@ const execFile = promisify(childProcess.execFile);
  * Returns the diff as a string.
  */
 const gitDiff = (pathToRepo, commit1, commit2 = "", file = "") => {
-  var args = ["diff", commit1];
+  const args = ["diff", commit1];
 
   if (commit2) args.push(commit2);
 
