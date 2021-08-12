@@ -1,7 +1,7 @@
 import promisify from 'util.promisify';
 import childProcess from 'child_process';
 
-const exec = promisify(childProcess.exec);
+const exec = promisify(childProcess.execFile);
 
 /**
  * Returns a git diff given a path to the repo, a commit,
@@ -10,7 +10,8 @@ const exec = promisify(childProcess.exec);
  * Returns the diff as a string.
  */
 const gitDiff = (pathToRepo, commit1, commit2 = '', file = '') =>
-  exec(`git diff ${commit1} ${commit2} -- ${file}`, {
+  const args = ["diff", commit1, commit2, "--', file];
+  execFile("git", args, {
     cwd: pathToRepo,
     encoding: 'utf8',
     maxBuffer: 1024 * 1000
