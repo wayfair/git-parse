@@ -1,7 +1,7 @@
-import promisify from 'util.promisify';
-import childProcess from 'child_process';
+import promisify from "util.promisify";
+import childProcess from "child_process";
 
-const exec = promisify(childProcess.exec);
+const execFile = promisify(childProcess.execFile);
 
 /**
  * Returns a git diff given a path to the repo, a commit,
@@ -9,11 +9,20 @@ const exec = promisify(childProcess.exec);
  *
  * Returns the diff as a string.
  */
-const gitDiff = (pathToRepo, commit1, commit2 = '', file = '') =>
-  exec(`git diff ${commit1} ${commit2} -- ${file}`, {
+const gitDiff = (pathToRepo, commit1, commit2 = "", file = "") => {
+  const args = ["diff", commit1];
+
+  if (commit2) args.push(commit2);
+
+  args.push("--");
+
+  if (file) args.push(file);
+
+  return execFile("git", args, {
     cwd: pathToRepo,
-    encoding: 'utf8',
-    maxBuffer: 1024 * 1000
-  }).then(output => output.stdout);
+    encoding: "utf8",
+    maxBuffer: 1024 * 1000,
+  }).then((output) => output.stdout);
+};
 
 export default gitDiff;
