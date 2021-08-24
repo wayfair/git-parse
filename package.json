@@ -1,6 +1,6 @@
 {
   "name": "git-parse",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Turn a git repository into a javascript object.",
   "main": "dist",
   "scripts": {
@@ -20,15 +20,15 @@
     },
     {
       "name": "Morgan Packard",
-      "email": "mpackard@wayfair.com"
+      "email": "morgan@morganpackard.com"
     },
     {
-      "name": "Ezra Skolnik",
-      "email": "eskolnik@wayfair.com"
+      "name": "Gary White",
+      "email": "gwhite@wayfair.com"
     },
     {
-      "name": "Sandy Suh",
-      "email": "asuh@wayfair.com"
+      "name": "Dan Rowe",
+      "email": "drowe@wayfair.com"
     }
   ],
   "repository": {
