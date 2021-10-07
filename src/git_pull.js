@@ -1,6 +1,6 @@
-import promisify from 'util.promisify';
-import childProcess from 'child_process';
-import {validatePath, resolveHome} from './util';
+import promisify from "util.promisify";
+import childProcess from "child_process";
+import { validatePath, resolveHome } from "./util";
 
 const exec = promisify(childProcess.exec);
 
@@ -9,7 +9,7 @@ const exec = promisify(childProcess.exec);
  *
  * Returns void. Throws error on failure.
  */
-const gitPull = async pathToRepo => {
+const gitPull = async (pathToRepo) => {
   const resolvedPath = resolveHome(pathToRepo);
 
   try {
@@ -18,7 +18,7 @@ const gitPull = async pathToRepo => {
     return Promise.reject(e);
   }
 
-  return exec(`git pull`, {cwd: resolvedPath});
+  return exec(`git pull`, { cwd: resolvedPath });
 };
 
 export default gitPull;

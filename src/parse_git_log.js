@@ -1,8 +1,8 @@
 // @flow
-import type {GitCommit} from './types/git_commit_type';
-import {gitLogCommitMarker} from './constants/git_log_format_markers';
-import parseCommit from './parse_commit';
-import byline from 'byline';
+import type { GitCommit } from "./types/git_commit_type";
+import { gitLogCommitMarker } from "./constants/git_log_format_markers";
+import parseCommit from "./parse_commit";
+import byline from "byline";
 
 const parseGitLog = (stream: any): Promise<GitCommit[]> => {
   return new Promise((resolve, reject) => {
@@ -11,7 +11,7 @@ const parseGitLog = (stream: any): Promise<GitCommit[]> => {
     const streamByLine = byline(stream);
     const commitPattern = gitLogCommitMarker;
 
-    streamByLine.on('data', line => {
+    streamByLine.on("data", (line) => {
       const lineString = line.toString();
       if (lineString.match(commitPattern)) {
         if (buffer.length) {
@@ -23,11 +23,11 @@ const parseGitLog = (stream: any): Promise<GitCommit[]> => {
       }
     });
 
-    streamByLine.on('error', e => {
+    streamByLine.on("error", (e) => {
       reject(e);
     });
 
-    streamByLine.on('end', () => {
+    streamByLine.on("end", () => {
       if (buffer.length) {
         parsedCommits.push(parseCommit(buffer));
       }
