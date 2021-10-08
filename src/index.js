@@ -1,14 +1,14 @@
 // @flow
-import type {GitCommit, FileModification} from './types/git_commit_type';
-import {validatePath, resolveHome} from './util';
-import checkoutCommit from './checkout_commit';
-import gitPull from './git_pull';
-import gitDiff from './git_diff';
-import parseGitLog from './parse_git_log';
-import gitLogStream from './git_log_stream';
+import type { GitCommit, FileModification } from "./types/git_commit_type";
+import { validatePath, resolveHome } from "./util";
+import checkoutCommit from "./checkout_commit";
+import gitPull from "./git_pull";
+import gitDiff from "./git_diff";
+import parseGitLog from "./parse_git_log";
+import gitLogStream from "./git_log_stream";
 
 type gitToJsOptions = {
-  sinceCommit?: string
+  sinceCommit?: string,
 };
 
 const gitToJs = (
@@ -23,7 +23,7 @@ const gitToJs = (
     return Promise.reject(e);
   }
 
-  const {stream, addErrorHandler} = gitLogStream(resolvedPath, options);
+  const { stream, addErrorHandler } = gitLogStream(resolvedPath, options);
 
   return new Promise((resolve, reject) => {
     addErrorHandler(reject);
@@ -32,5 +32,5 @@ const gitToJs = (
   });
 };
 
-export {gitToJs, checkoutCommit, gitPull, gitDiff};
-export type {GitCommit, FileModification};
+export { gitToJs, checkoutCommit, gitPull, gitDiff };
+export type { GitCommit, FileModification };

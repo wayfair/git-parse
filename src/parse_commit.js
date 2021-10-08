@@ -3,13 +3,13 @@
 import type {
   GitCommit,
   FileModification,
-  FileRename
-} from './types/git_commit_type';
+  FileRename,
+} from "./types/git_commit_type";
 
 import {
   gitLogMessageMarker,
-  gitLogFileMarker
-} from './constants/git_log_format_markers';
+  gitLogFileMarker,
+} from "./constants/git_log_format_markers";
 
 const parseCommit = (commit: string[]): GitCommit => {
   const hash = commit[0];
@@ -17,11 +17,11 @@ const parseCommit = (commit: string[]): GitCommit => {
   const authorEmail = commit[2];
   const date = commit[3];
 
-  const messageIndex = commit.findIndex(line =>
+  const messageIndex = commit.findIndex((line) =>
     line.match(gitLogMessageMarker)
   );
-  const fileIndex = commit.findIndex(line => line.match(gitLogFileMarker));
-  const message = commit.slice(messageIndex + 1, fileIndex).join('\n');
+  const fileIndex = commit.findIndex((line) => line.match(gitLogFileMarker));
+  const message = commit.slice(messageIndex + 1, fileIndex).join("\n");
   const files = commit.slice(fileIndex + 1);
 
   const addPattern = /^A\s([^\s]+)/;
@@ -33,7 +33,7 @@ const parseCommit = (commit: string[]): GitCommit => {
     return files.reduce((accumulator, file) => {
       const match = file.match(pattern);
       if (match) {
-        accumulator.push({path: match[1]});
+        accumulator.push({ path: match[1] });
       }
 
       return accumulator;
@@ -45,7 +45,7 @@ const parseCommit = (commit: string[]): GitCommit => {
     if (match) {
       accumulator.push({
         oldPath: match[1],
-        newPath: match[2]
+        newPath: match[2],
       });
     }
     return accumulator;
@@ -60,7 +60,7 @@ const parseCommit = (commit: string[]): GitCommit => {
     filesAdded: filterFileChanges(addPattern),
     filesDeleted: filterFileChanges(deletePattern),
     filesModified: filterFileChanges(modifyPattern),
-    filesRenamed
+    filesRenamed,
   };
 
   return parsedCommit;

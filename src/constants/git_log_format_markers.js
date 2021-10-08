@@ -1,6 +1,6 @@
 // @flow
-const gitLogCommitMarker = 'GITPARSECOMMIT';
-const gitLogMessageMarker = 'GITPARSEMESSAGE';
-const gitLogFileMarker = 'GITPARSEFILES';
+const gitLogCommitMarker = "GITPARSECOMMIT";
+const gitLogMessageMarker = "GITPARSEMESSAGE";
+const gitLogFileMarker = "GITPARSEFILES";
 
-export {gitLogCommitMarker, gitLogMessageMarker, gitLogFileMarker};
+export { gitLogCommitMarker, gitLogMessageMarker, gitLogFileMarker };
