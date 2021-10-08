@@ -7,16 +7,16 @@ describe("index", () => {
   const gitRepoToCommit = path.join(pathToTestRepo, "dot_git");
   const realDotGitDir = path.join(pathToTestRepo, ".git");
 
-  it("should reject the promise if the directory is not the root of a git repo", (done) => {
-    return gitToJs(pathToTestRepo).catch(() => done());
+  it("should reject the promise if the directory is not the root of a git repo", () => {
+    return expect(() => gitToJs(pathToTestRepo)).rejects.toThrow(
+      /does not appear to be the root of a git repository/
+    );
   });
 
-  it("should reject the promise if the directory does not exist", (done) => {
-    return gitToJs(
-      "/some_crazy_directory_that_does_not_exist/asdfasdfasdfasdfxxxx"
-    ).catch(() => {
-      done();
-    });
+  it("should reject the promise if the directory does not exist", () => {
+    return expect(() =>
+      gitToJs("/some_crazy_directory_that_does_not_exist/asdfasdfasdfasdfxxxx")
+    ).rejects.toThrow(/was not found/);
   });
 
   xit("VISUAL GREP TEST ONLY, ENABLE FOR DEBUGGING PURPOSES ONLY", (done) => {
