@@ -2,12 +2,12 @@
 type FileModification = {
   path: string,
   linesAdded?: number,
-  linesDeleted?: number
+  linesDeleted?: number,
 };
 
 type FileRename = {
   oldPath: string,
-  newPath: string
+  newPath: string,
 };
 
 type GitCommit = {
@@ -19,7 +19,7 @@ type GitCommit = {
   filesAdded: FileModification[],
   filesDeleted: FileModification[],
   filesModified: FileModification[],
-  filesRenamed: FileRename[]
+  filesRenamed: FileRename[],
 };
 
-export type {GitCommit, FileModification, FileRename};
+export type { GitCommit, FileModification, FileRename };

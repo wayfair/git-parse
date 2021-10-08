@@ -1,6 +1,6 @@
-import promisify from 'util.promisify';
-import childProcess from 'child_process';
-import {validatePath, resolveHome} from './util';
+import promisify from "util.promisify";
+import childProcess from "child_process";
+import { validatePath, resolveHome } from "./util";
 
 const exec = promisify(childProcess.exec);
 
@@ -9,7 +9,7 @@ const exec = promisify(childProcess.exec);
  *
  * Returns void. Throws error on failure.
  */
-const checkoutCommit = async (pathToRepo, hash, options = {force: false}) => {
+const checkoutCommit = async (pathToRepo, hash, options = { force: false }) => {
   const resolvedPath = resolveHome(pathToRepo);
 
   try {
@@ -18,8 +18,8 @@ const checkoutCommit = async (pathToRepo, hash, options = {force: false}) => {
     return Promise.reject(e);
   }
 
-  return exec(`git checkout ${hash} ${options.force ? '--force' : ''}`, {
-    cwd: resolvedPath
+  return exec(`git checkout ${hash} ${options.force ? "--force" : ""}`, {
+    cwd: resolvedPath,
   });
 };
 

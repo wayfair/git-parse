@@ -1,12 +1,11 @@
-
 # Git-Parse
 
 `git-parse` is a utility which generates an array of javascript objects representing the current branch of a local git repository's commit history.
 
 ## Getting Started
 
-
 ### Prerequisites
+
 ```
 nodejs version 8 or higher
 ```
@@ -17,8 +16,8 @@ nodejs version 8 or higher
   npm install --save git-parse
 ```
 
-
 ### Usage
+
 ```
 const { gitToJs } = require('git-parse');
 
@@ -27,7 +26,9 @@ const commitsPromise = gitToJs('path/to/repo/');
 commitsPromise.then(commits => console.log(JSON.stringify(commits, null, 2)));
 
 ```
+
 **Console Output:**
+
 ```
 [
   {
@@ -45,19 +46,19 @@ commitsPromise.then(commits => console.log(JSON.stringify(commits, null, 2)));
      "filesModified":[ ],
      "filesRenamed":[ ]
   },
-  {                                                                                    
-    "hash": "226f032eb87ac1eb18b7212eeaf1356980a9ae03",                                
-    "authorName": "mpackard@wayfair.com",                                              
-    "authorEmail": "mpackard@wayfair.com",                                             
-    "date": "Wed, 10 Jan 2018 15:25:16 -0500",                                         
-    "message": "add README",                                                           
-    "filesAdded": [                                                                    
-      { "path": "README.md" }                                                                                
-    ],                                                                                 
-    "filesDeleted": [],                                                                
-    "filesModified": [],                                                               
-    "filesRenamed": []                                                                 
-  }                                   
+  {
+    "hash": "226f032eb87ac1eb18b7212eeaf1356980a9ae03",
+    "authorName": "mpackard@wayfair.com",
+    "authorEmail": "mpackard@wayfair.com",
+    "date": "Wed, 10 Jan 2018 15:25:16 -0500",
+    "message": "add README",
+    "filesAdded": [
+      { "path": "README.md" }
+    ],
+    "filesDeleted": [],
+    "filesModified": [],
+    "filesRenamed": []
+  }
 ]
 ```
 
@@ -92,4 +93,3 @@ Returns a promise resolving with the diff as a string.
 ## License
 
 This project is licensed under the BSD-2-Clause license.
-
