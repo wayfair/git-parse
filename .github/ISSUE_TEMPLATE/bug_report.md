@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Bug Report
 about: 'Create a report to surface a potential issue'
 title: ''
 labels: bug, needs triage
@@ -11,12 +11,8 @@ assignees: ''
 
 ## What were you expecting to happen?
 
-## Steps to Reproduce
-1.
-2.
-3.
-4.
-
+## Reproducing the Bug
+<!-- Please include detailed steps to reproduce and a minimal reproduction in a codesandbox / example repo (when possible) -->
 ## Any logs, error output, etc?
 
 ## Environment

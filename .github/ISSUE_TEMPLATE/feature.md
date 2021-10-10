@@ -1,5 +1,5 @@
 ---
-name: Feature
+name: Feature Request
 about: 'Suggest a feature/enhancement'
 title: ''
 labels: enhancement

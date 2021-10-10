@@ -1,15 +1,15 @@
 ---
-name: 'Discussion'
+name: Ask a Question
 about: Any question about the project to discuss
 title: "❓"
-labels: discussion
+labels: question
 assignees: ''
 
 ---
 
 ## Question
 
-A clear and consistent question about the project. Ex. How can I do this? Why does this thing work this way? etc.
+A clear and concise question about the project. Ex. How can I do this? Why does this thing work this way? etc.
 
 ## Context
 
