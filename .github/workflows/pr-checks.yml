@@ -1,7 +1,7 @@
-name: GitHub Actions Demo
+name: PR Checks
 on: [push, pull_request]
 jobs:
-  Explore-GitHub-Actions:
+  PR-Checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
