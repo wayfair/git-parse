@@ -8,7 +8,19 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 10
+
+      - name: Install node_modules
+        uses: actions/cache@v2
+        with:
+
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
       - run: npm install
+        env:
+          cache-name: cache-node-modules
+
   test:
     needs: setup
     runs-on: ubuntu-latest
