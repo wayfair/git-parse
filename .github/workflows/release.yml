@@ -2,8 +2,8 @@ name: "publish to NPM"
 on:
   push:
     tags: ["*"]
-  
-jobs: 
+
+jobs:
   publish:
     runs-on: "ubuntu-latest"
     steps:
@@ -19,7 +19,7 @@ jobs:
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-      
+
       - if: steps.publish.outputs.type != 'none'
         run: |
           echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"

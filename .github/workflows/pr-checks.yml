@@ -45,7 +45,7 @@ jobs:
           cache: npm
       - name: install
         run: npm ci
-      - name: test
+      - name: lint
         run: npm run lint
 
   prettier:
@@ -61,5 +61,5 @@ jobs:
           cache: npm
       - name: install
         run: npm ci
-      - name: test
+      - name: format-check
         run: npm run format:check
