@@ -27,8 +27,6 @@ jobs:
         with:
           node-version: 10.x
           cache: npm
-      - name: install
-        run: npm ci
       - name: test
         run: npm run test
 
@@ -43,7 +41,5 @@ jobs:
         with:
           node-version: 10.x
           cache: npm
-      - name: install
-        run: npm ci
       - name: test
         run: npm run format:check
