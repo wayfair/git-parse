@@ -5,7 +5,9 @@
   "main": "dist",
   "scripts": {
     "test": "jest",
-    "build": "node ./scripts/compile-src"
+    "build": "node ./scripts/compile-src",
+    "format": "prettier --write **/*.js",
+    "format:check": "prettier --check **/*.js"
   },
   "author": "",
   "dependencies": {
