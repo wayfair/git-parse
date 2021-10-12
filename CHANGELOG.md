@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### New features
 
+- Changelog will now track changes as they are made!
+
 ### Fixes
 
 ### Breaking Changes
