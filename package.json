@@ -51,10 +51,8 @@
     "eslint-plugin-import": "2.24.0",
     "flow-bin": "0.157.0",
     "flow-copy-source": "2.0.9",
-    "inquirer": "8.1.2",
     "jest": "^27",
     "lerna": "4.0.0",
-    "lodash": "4.17.21",
     "minimist": "1.2.5",
     "nock": "13.1.1",
     "prettier": "^2.3.2"
