@@ -54,7 +54,6 @@
     "jest": "^27",
     "lerna": "4.0.0",
     "minimist": "1.2.5",
-    "nock": "13.1.1",
     "prettier": "^2.3.2"
   },
   "files": [
