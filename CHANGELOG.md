@@ -13,5 +13,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixes
 
 - Removed unused `inquirer` and `lodash` dependencies
+- Removed unused `nock` dependency
 
 ### Breaking Changes
