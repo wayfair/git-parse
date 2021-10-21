@@ -4,62 +4,62 @@
     "description": "Turn a git repository into a javascript object.",
     "main": "dist",
     "scripts": {
-        "test": "jest",
-        "build": "node ./scripts/compile-src",
-        "format": "prettier --write **/*.js",
-        "format:check": "prettier --check **/*.js",
-        "lint": "eslint src/**/*.js"
+      "test": "jest",
+      "build": "node ./scripts/compile-src",
+      "format": "prettier --write **/*.js",
+      "format:check": "prettier --check **/*.js",
+      "lint": "eslint src/**/*.js"
     },
     "author": "",
     "dependencies": {
-        "byline": "5.0.0",
-        "util.promisify": "1.1.1"
+      "byline": "5.0.0",
+      "util.promisify": "1.1.1"
     },
     "license": "BSD-2-Clause",
     "contributors": [
-        {
-            "name": "Suzi Curran",
-            "email": "sucurran@wayfair.com"
-        },
-        {
-            "name": "Morgan Packard",
-            "email": "morgan@morganpackard.com"
-        },
-        {
-            "name": "Gary White",
-            "email": "gwhite@wayfair.com"
-        },
-        {
-            "name": "Dan Rowe",
-            "email": "drowe@wayfair.com"
-        }
+      {
+        "name": "Suzi Curran",
+        "email": "sucurran@wayfair.com"
+      },
+      {
+        "name": "Morgan Packard",
+        "email": "morgan@morganpackard.com"
+      },
+      {
+        "name": "Gary White",
+        "email": "gwhite@wayfair.com"
+      },
+      {
+        "name": "Dan Rowe",
+        "email": "drowe@wayfair.com"
+      }
     ],
     "repository": {
-        "type": "git",
-        "url": "https://github.com/wayfair/git-parse"
+      "type": "git",
+      "url": "https://github.com/wayfair/git-parse"
     },
     "devDependencies": {
-        "@babel/cli": "^7.14.8",
-        "@babel/eslint-parser": "^7.15.0",
-        "@babel/plugin-proposal-class-properties": "^7.14.5",
-        "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
-        "@babel/preset-env": "^7.15.0",
-        "@babel/preset-flow": "^7.14.5",
-        "babel-eslint": "^10.1.0",
-        "eslint": "7.32.0",
-        "eslint-plugin-flowtype": "5.9.0",
-        "eslint-plugin-import": "2.24.0",
-        "flow-bin": "0.157.0",
-        "flow-copy-source": "2.0.9",
-        "jest": "^27",
-        "lerna": "4.0.0",
-        "minimist": "1.2.5",
-        "prettier": "^2.3.2"
+      "@babel/cli": "^7.14.8",
+      "@babel/eslint-parser": "^7.15.0",
+      "@babel/plugin-proposal-class-properties": "^7.14.5",
+      "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+      "@babel/preset-env": "^7.15.0",
+      "@babel/preset-flow": "^7.14.5",
+      "babel-eslint": "^10.1.0",
+      "eslint": "7.32.0",
+      "eslint-plugin-flowtype": "5.9.0",
+      "eslint-plugin-import": "2.24.0",
+      "flow-bin": "0.157.0",
+      "flow-copy-source": "2.0.9",
+      "jest": "^27",
+      "lerna": "4.0.0",
+      "minimist": "1.2.5",
+      "prettier": "^2.3.2"
     },
     "files": [
-        "dist"
+      "dist"
     ],
     "keywords": [
-        "git"
+      "git"
     ]
-}
+  }
