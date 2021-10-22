@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Changelog will now track changes when they are made!
 - Increased verbosity in `npm ci` for GitHub Action checks
+- Update project to indicate Nodejs v14.x support
 
 ### Fixes
 
