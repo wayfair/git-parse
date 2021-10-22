@@ -9,7 +9,7 @@ Git-Parse
 
 ### Details
 
-- Support NodeJS >= 8 
+- Support NodeJS >= 14
 
 ### Installation
 
