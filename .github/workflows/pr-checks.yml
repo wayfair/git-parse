@@ -14,7 +14,7 @@ jobs:
           cache: npm
 
       - name: Validate cache
-        run: npm ci
+        run: npm ci --loglevel verbose
 
   test:
     name: Run Jest Tests
@@ -28,7 +28,7 @@ jobs:
           node-version: 10.x
           cache: npm
       - name: install
-        run: npm ci
+        run: npm ci --loglevel verbose
       - name: test
         run: npm run test
 
@@ -44,7 +44,7 @@ jobs:
           node-version: 10.x
           cache: npm
       - name: install
-        run: npm ci
+        run: npm ci --loglevel verbose
       - name: lint
         run: npm run lint
 
@@ -60,6 +60,6 @@ jobs:
           node-version: 10.x
           cache: npm
       - name: install
-        run: npm ci
+        run: npm ci --loglevel verbose
       - name: format-check
         run: npm run format:check
