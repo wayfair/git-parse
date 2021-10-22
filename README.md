@@ -13,7 +13,7 @@ nodejs version 14 or higher
 ### Installation
 
 ```
-npm install --save git-parse
+npm i git-parse
 ```
 
 ### Usage
