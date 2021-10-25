@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Chore
+
+- Migrates package manager from npm to yarn2
+
 ### New features
 
 - Changelog will now track changes when they are made!
