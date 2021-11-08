@@ -11,9 +11,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm install
-      - run: npm test
-      - run: npm run-script build
+      - run: yarn install
+      - run: yarn test
+      - run: yarn build
 
       - id: "publish"
         uses: JS-DevTools/npm-publish@v1
