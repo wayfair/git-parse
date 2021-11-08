@@ -11,7 +11,10 @@
     "format": "prettier --write src/**/*.ts",
     "format:check": "prettier --check src/**/*.ts",
     "lint": "eslint src/**/*.ts",
-    "build:watch": "yarn build:babel --watch & yarn tsc --watch"
+    "build:watch": "yarn build:babel --watch & yarn tsc --watch",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable"
   },
   "author": "",
   "dependencies": {
@@ -55,6 +58,8 @@
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "babel-eslint": "^10.1.0",
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
     "eslint": "7.32.0",
     "eslint-plugin-flowtype": "5.9.0",
     "eslint-plugin-import": "2.24.0",
