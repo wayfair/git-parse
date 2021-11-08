@@ -3,14 +3,14 @@ on:
   push:
     tags: ["*"]
 
-jobs: 
+jobs:
   publish:
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: 10
+          node-version: 14
       - run: yarn install
       - run: yarn test
       - run: yarn build
@@ -19,7 +19,7 @@ jobs:
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-      
+
       - if: steps.publish.outputs.type != 'none'
         run: |
           echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
