@@ -61,5 +61,8 @@
   ],
   "keywords": [
     "git"
-  ]
+  ],
+  "engines": {
+    "node": ">=14"
+  }
 }

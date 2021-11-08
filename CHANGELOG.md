@@ -18,3 +18,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed unused `nock` dependency
 
 ### Breaking Changes
+
+- Updated project to indicate support for Nodejs v14.x and above
