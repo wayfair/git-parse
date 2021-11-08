@@ -1,13 +1,13 @@
 {
   "name": "git-parse",
-  "version": "1.0.5",
+  "version": "2.1.0",
   "description": "Turn a git repository into a javascript object.",
   "main": "dist",
   "scripts": {
     "test": "jest",
     "build": "node ./scripts/compile-src",
-    "format": "prettier --write **/*.js",
-    "format:check": "prettier --check **/*.js",
+    "format": "prettier --write src/**/*.js",
+    "format:check": "prettier --check src/**/*.js",
     "lint": "eslint src/**/*.js"
   },
   "author": "",
@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.0",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
@@ -61,5 +62,8 @@
   ],
   "keywords": [
     "git"
-  ]
+  ],
+  "engines": {
+    "node": ">=14"
+  }
 }

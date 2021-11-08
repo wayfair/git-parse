@@ -7,14 +7,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
-          cache: npm
-
+          node-version: 14.x
+          cache: yarn
       - name: Validate cache
-        run: npm ci --loglevel verbose
+        run: yarn install --frozen-lockfile
 
   test:
     name: Run Jest Tests
@@ -25,12 +23,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
-          cache: npm
+          node-version: 14.x
+          cache: yarn
       - name: install
-        run: npm ci --loglevel verbose
+        run: yarn install --frozen-lockfile
       - name: test
-        run: npm run test
+        run: yarn test
 
   lint:
     name: Run Lints
@@ -41,12 +39,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
-          cache: npm
+          node-version: 14.x
+          cache: yarn
       - name: install
-        run: npm ci --loglevel verbose
+        run: yarn install --frozen-lockfile
       - name: lint
-        run: npm run lint
+        run: yarn lint
 
   prettier:
     name: Check Formatting
@@ -57,9 +55,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
-          cache: npm
+          node-version: 14.x
+          cache: yarn
       - name: install
-        run: npm ci --loglevel verbose
+        run: yarn install --frozen-lockfile
       - name: format-check
-        run: npm run format:check
+        run: yarn format:check

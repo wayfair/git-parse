@@ -7,14 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### New features
+### Chores
+
+- Migrates package manager from npm to yarn2
+
+## 2.0.0 (November 8, 2021)
+
+### Features
 
 - Changelog will now track changes when they are made!
 - Increased verbosity in `npm ci` for GitHub Action checks
 
-### Fixes
+### Bug Fixes
 
 - Removed unused `inquirer` and `lodash` dependencies
 - Removed unused `nock` dependency
 
 ### Breaking Changes
+
+- Updated project to indicate support for Nodejs v14.x and above
