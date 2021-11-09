@@ -1,6 +1,20 @@
 name: PR Checks
 on: [push, pull_request]
 jobs:
+
+  # Checks that PR commits match the Conventional Commmit format
+  # See: https://www.conventionalcommits.org/en/v1.0.0/
+  commitlint:
+    name: Lint commit message
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v4  # See: https://github.com/wagoid/commitlint-github-action
+        with:
+          configFile: .commitlintrc.yml
+
   install-node-modules:
     name: Install node_modules
     runs-on: ubuntu-latest
