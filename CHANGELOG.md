@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bundle TS types with library
 - Add workflow to auto close PRs with no response from the author after 30 days
 - Add workflow to close stale PRs and Issues
+- Add checks via [https://www.npmjs.com/package/husky](husky) and [commit-lint](https://www.npmjs.com/package/@commitlint/cli) to validate commit messages match the [Conventional Commit specification](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 
 ## 2.0.0 (November 8, 2021)
 
