@@ -1,4 +1,3 @@
-// @flow
 import type { GitCommit } from "./types/git_commit_type";
 import { gitLogCommitMarker } from "./constants/git_log_format_markers";
 import parseCommit from "./parse_commit";

@@ -92,6 +92,57 @@ Returns a git diff given a path to the repo, a commit, an optional second commit
 
 Returns a promise resolving with the diff as a string.
 
+## Development
+
+### Build
+
+To generate a local distribution for the git-parse library run the following command:
+```sh
+yarn build
+```
+
+To build the library in the background on file changes, use:
+```sh
+yarn build:watch
+```
+
+### Code Formatting
+
+To automatically format the code using [Prettier](https://prettier.io/) run:
+```sh
+yarn format
+```
+or
+```sh
+yarn format:check
+```
+
+### Linting
+
+To lint the project using [ESLint](https://eslint.org/) run:
+```sh
+yarn lint
+```
+
+### Tests
+
+To run the project tests using the [Jest](https://jestjs.io/) framework run:
+```sh
+yarn test
+```
+
+### Type Checking
+
+To check the project for type errors using [Typescript](https://www.typescriptlang.org/) run:
+```sh
+yarn tsc
+```
+
+Use `--watch` to run the type checker in the background:
+```sh
+yarn tsc --watch
+```
+
 ## License
 
 This project is licensed under the BSD-2-Clause license.

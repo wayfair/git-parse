@@ -1,4 +1,3 @@
-// @flow
 import type { GitCommit, FileModification } from "./types/git_commit_type";
 import { validatePath, resolveHome } from "./util";
 import checkoutCommit from "./checkout_commit";
@@ -8,7 +7,7 @@ import parseGitLog from "./parse_git_log";
 import gitLogStream from "./git_log_stream";
 
 type gitToJsOptions = {
-  sinceCommit?: string,
+  sinceCommit?: string;
 };
 
 const gitToJs = (

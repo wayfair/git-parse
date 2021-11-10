@@ -1,4 +1,3 @@
-// @flow
 import { existsSync } from "fs";
 import { join } from "path";
 
@@ -7,7 +6,7 @@ export const resolveHome = (filepath: string) => {
     const restOfPath: string = filepath.slice(1);
     if (!process.env.HOME)
       throw new Error("HOME environment variable is missing");
-    const home: string = (process.env.HOME: string);
+    const home: string = process.env.HOME as string;
     return join(home, restOfPath);
   }
   return filepath;

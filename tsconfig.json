@@ -1,0 +1,35 @@
+{
+  "allowJs": true,
+  "compilerOptions": {
+    // Ensure that .d.ts files are created by tsc, but not .js files
+    // See: https://www.typescriptlang.org/docs/handbook/babel-with-typescript.html#babel-for-transpiling-tsc-for-types
+    "declaration": true,    
+    "emitDeclarationOnly": true,
+
+    // Disallow features that require cross-file information for emit.
+    "isolatedModules": true,
+    // Process & infer types from .js files.
+    "allowJs": true,
+    "checkJs": true,
+    "module": "commonjs",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "pretty": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "baseUrl": "resources",
+    "paths": {
+      "@root/*": ["./*"]
+    },
+    "esModuleInterop": true,
+    "strict": true,
+    "allowUnreachableCode": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "outDir": "./dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+
