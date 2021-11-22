@@ -4,9 +4,9 @@
     "es6": true,
     "jest": true
   },
-  "extends": ["eslint:recommended"],
-  "plugins": ["flowtype"],
-  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
