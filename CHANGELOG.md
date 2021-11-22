@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Chores
 
 - Migrates package manager from npm to yarn2
+- Uses node 12 instead of 14 to better support apollo-graphql downstream
 
 ## 2.0.0 (November 8, 2021)
 
