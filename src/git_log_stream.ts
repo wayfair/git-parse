@@ -7,10 +7,19 @@ import {
 
 const gitLogFormatString = `${gitLogCommitMarker}%n%H%n%an%n%ae%n%aD%n${gitLogMessageMarker}%n%B%n${gitLogFileMarker}`;
 
+export type GitLogStreamErrorHandler = (error: Error) => void;
+
+export interface GitLogStreamOptions {
+  sinceCommit?: string;
+}
+
 /*
   Returns a stream of git log data from a git repository
 */
-const gitLogStream = (pathToRepo, options = {}) => {
+const gitLogStream = (
+  pathToRepo: string,
+  options: GitLogStreamOptions = {}
+) => {
   const sinceCommit = options.sinceCommit ? `${options.sinceCommit}..HEAD` : "";
   const gitParams = [
     "log",
@@ -23,11 +32,11 @@ const gitLogStream = (pathToRepo, options = {}) => {
   ].filter((elt) => elt !== "");
 
   const gitProcess = childProcess.spawn("git", gitParams, { cwd: pathToRepo });
-  const errorHandlers = [];
+  const errorHandlers: GitLogStreamErrorHandler[] = [];
   gitProcess.on("error", (e) => errorHandlers.forEach((handler) => handler(e)));
   return {
     stream: gitProcess.stdout,
-    addErrorHandler: (fn) => errorHandlers.push(fn),
+    addErrorHandler: (fn: GitLogStreamErrorHandler) => errorHandlers.push(fn),
   };
 };
 

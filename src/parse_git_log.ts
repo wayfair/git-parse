@@ -3,10 +3,10 @@ import { gitLogCommitMarker } from "./constants/git_log_format_markers";
 import parseCommit from "./parse_commit";
 import byline from "byline";
 
-const parseGitLog = (stream: any): Promise<GitCommit[]> => {
+const parseGitLog = (stream: NodeJS.ReadableStream): Promise<GitCommit[]> => {
   return new Promise((resolve, reject) => {
-    let buffer = [];
-    const parsedCommits = [];
+    let buffer: string[] = [];
+    const parsedCommits: GitCommit[] = [];
     const streamByLine = byline(stream);
     const commitPattern = gitLogCommitMarker;
 

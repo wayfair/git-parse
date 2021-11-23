@@ -7,9 +7,11 @@ const exec = promisify(childProcess.exec);
 /**
  * Pulls a repo given its path.
  *
- * Returns void. Throws error on failure.
+ * Returns child_process exec output for git pull. Throws error on failure.
  */
-const gitPull = async (pathToRepo) => {
+const gitPull = async (
+  pathToRepo: string
+): Promise<{ stdout: string; stderr: string }> => {
   const resolvedPath = resolveHome(pathToRepo);
 
   try {

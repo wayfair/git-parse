@@ -2883,6 +2883,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/byline@npm:^4.2.33":
+  version: 4.2.33
+  resolution: "@types/byline@npm:4.2.33"
+  dependencies:
+    "@types/node": "*"
+  checksum: c980dc8b5a3a7240c93a38be46983613c63aee1b850fa9f5c78943587374f6894ddb6d8dea70ff79f3352cc7c42f89cf0a60eeb69d952891000854ec424e40c7
+  languageName: node
+  linkType: hard
+
 "@types/graceful-fs@npm:^4.1.2":
   version: 4.1.5
   resolution: "@types/graceful-fs@npm:4.1.5"
@@ -2987,6 +2996,15 @@ __metadata:
   version: 2.0.1
   resolution: "@types/stack-utils@npm:2.0.1"
   checksum: 205fdbe3326b7046d7eaf5e494d8084f2659086a266f3f9cf00bccc549c8e36e407f88168ad4383c8b07099957ad669f75f2532ed4bc70be2b037330f7bae019
+  languageName: node
+  linkType: hard
+
+"@types/util.promisify@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@types/util.promisify@npm:1.0.4"
+  dependencies:
+    "@types/node": "*"
+  checksum: 60a1f3e8888ced99440c9a7fe39232ab0006d2d5e889da95a91acac6700a539109ea21e843bf33dce064b0aa62a266d8b7c9642cb679f4e7b227df982ed14c25
   languageName: node
   linkType: hard
 
@@ -5310,7 +5328,9 @@ __metadata:
     "@babel/plugin-proposal-object-rest-spread": ^7.14.7
     "@babel/preset-env": ^7.15.0
     "@babel/preset-typescript": ^7.16.0
+    "@types/byline": ^4.2.33
     "@types/jest": ^27.0.2
+    "@types/util.promisify": ^1.0.4
     "@typescript-eslint/eslint-plugin": ^5.4.0
     "@typescript-eslint/parser": ^5.4.0
     babel-eslint: ^10.1.0
