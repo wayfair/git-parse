@@ -5,11 +5,13 @@ import { validatePath, resolveHome } from "./util";
 const exec = promisify(childProcess.exec);
 
 /**
- * Checks out a commit given its repo and hash.
+ * Pulls a repo given its path.
  *
- * Returns void. Throws error on failure.
+ * Returns child_process exec output for git pull. Throws error on failure.
  */
-const checkoutCommit = async (pathToRepo, hash, options = { force: false }) => {
+const gitPull = async (
+  pathToRepo: string
+): Promise<{ stdout: string; stderr: string }> => {
   const resolvedPath = resolveHome(pathToRepo);
 
   try {
@@ -18,9 +20,7 @@ const checkoutCommit = async (pathToRepo, hash, options = { force: false }) => {
     return Promise.reject(e);
   }
 
-  return exec(`git checkout ${hash} ${options.force ? "--force" : ""}`, {
-    cwd: resolvedPath,
-  });
+  return exec(`git pull`, { cwd: resolvedPath });
 };
 
-export default checkoutCommit;
+export default gitPull;

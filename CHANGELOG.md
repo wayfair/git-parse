@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Migrates package manager from npm to yarn2
 - Uses node 12 instead of 14 to better support apollo-graphql downstream
+- Replace Flow with TypeScript for type checking
+- Bundle TS types with library
 
 ## 2.0.0 (November 8, 2021)
 

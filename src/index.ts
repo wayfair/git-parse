@@ -1,4 +1,3 @@
-// @flow
 import type { GitCommit, FileModification } from "./types/git_commit_type";
 import { validatePath, resolveHome } from "./util";
 import checkoutCommit from "./checkout_commit";
@@ -7,13 +6,15 @@ import gitDiff from "./git_diff";
 import parseGitLog from "./parse_git_log";
 import gitLogStream from "./git_log_stream";
 
-type gitToJsOptions = {
-  sinceCommit?: string,
-};
+export interface GitToJsOptions {
+  sinceCommit: string | undefined;
+}
 
 const gitToJs = (
   repoPath: string,
-  options?: gitToJsOptions = {}
+  options: GitToJsOptions = {
+    sinceCommit: undefined,
+  }
 ): Promise<GitCommit[]> => {
   const resolvedPath = resolveHome(repoPath);
 

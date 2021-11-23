@@ -1,5 +1,3 @@
-// @flow
-
 import type {
   GitCommit,
   FileModification,
@@ -29,8 +27,8 @@ const parseCommit = (commit: string[]): GitCommit => {
   const modifyPattern = /^M\s([^\s]+)/;
   const renamePattern = /^R[0-9]+\s(.+)\s(.+)/;
 
-  const filterFileChanges = (pattern): FileModification[] => {
-    return files.reduce((accumulator, file) => {
+  const filterFileChanges = (pattern: RegExp): FileModification[] => {
+    return files.reduce((accumulator: FileModification[], file: string) => {
       const match = file.match(pattern);
       if (match) {
         accumulator.push({ path: match[1] });
@@ -40,16 +38,19 @@ const parseCommit = (commit: string[]): GitCommit => {
     }, []);
   };
 
-  const filesRenamed: FileRename[] = files.reduce((accumulator, file) => {
-    const match = file.match(renamePattern);
-    if (match) {
-      accumulator.push({
-        oldPath: match[1],
-        newPath: match[2],
-      });
-    }
-    return accumulator;
-  }, []);
+  const filesRenamed: FileRename[] = files.reduce(
+    (accumulator: FileRename[], file: string) => {
+      const match = file.match(renamePattern);
+      if (match) {
+        accumulator.push({
+          oldPath: match[1],
+          newPath: match[2],
+        });
+      }
+      return accumulator;
+    },
+    []
+  );
 
   const parsedCommit = {
     hash,
