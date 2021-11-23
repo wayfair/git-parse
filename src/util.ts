@@ -4,7 +4,7 @@ import { join } from "path";
 export const resolveHome = (filepath: string) => {
   if (filepath[0] === "~") {
     const restOfPath: string = filepath.slice(1);
-    if (typeof process.env.HOME !== 'string')
+    if (typeof process.env.HOME !== "string")
       throw new Error("HOME environment variable is missing");
     const home = process.env.HOME;
     return join(home, restOfPath);
