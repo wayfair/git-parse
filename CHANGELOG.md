@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace Flow with TypeScript for type checking
 - Bundle TS types with library
 - Add workflow to auto close PRs with no response from the author after 30 days
+- Add workflow to close stale PRs and Issues
 
 ## 2.0.0 (November 8, 2021)
 
