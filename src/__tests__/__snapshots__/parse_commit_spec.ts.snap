@@ -9,15 +9,24 @@ Object {
     Object {
       "path": "packages/distillery/src/index.js",
     },
+    Object {
+      "path": "directory/t t.md",
+    },
   ],
   "filesDeleted": Array [
     Object {
       "path": "packages/git-parse/index.js",
     },
+    Object {
+      "path": "directory/t2 t2.md",
+    },
   ],
   "filesModified": Array [
     Object {
       "path": "README.md",
+    },
+    Object {
+      "path": "READ ME.md",
     },
   ],
   "filesRenamed": Array [
