@@ -10,9 +10,12 @@ describe("parseCommit", () => {
     "add flow",
     "GITPARSEFILES",
     "M	README.md",
+    "M	READ ME.md",
     "R078	packages/git-parse/__tests__/index.spec.js	packages/distillery/src/__tests__/index.spec.js",
     "A	packages/distillery/src/index.js",
+    "A	directory/t t.md",
     "D	packages/git-parse/index.js",
+    "D	directory/t2 t2.md",
   ];
 
   it("returns a parsed git commit", () => {

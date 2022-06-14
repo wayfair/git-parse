@@ -22,9 +22,9 @@ const parseCommit = (commit: string[]): GitCommit => {
   const message = commit.slice(messageIndex + 1, fileIndex).join("\n");
   const files = commit.slice(fileIndex + 1);
 
-  const addPattern = /^A\s([^\s]+)/;
-  const deletePattern = /^D\s([^\s]+)/;
-  const modifyPattern = /^M\s([^\s]+)/;
+  const addPattern = /^A\s(.+)/;
+  const deletePattern = /^D\s(.+)/;
+  const modifyPattern = /^M\s(.+)/;
   const renamePattern = /^R[0-9]+\s(.+)\s(.+)/;
 
   const filterFileChanges = (pattern: RegExp): FileModification[] => {
