@@ -7154,10 +7154,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-schema@npm:0.2.3":
-  version: 0.2.3
-  resolution: "json-schema@npm:0.2.3"
-  checksum: bbc2070988fb5f2a2266a31b956f1b5660e03ea7eaa95b33402901274f625feb586ae0c485e1df854fde40a7f0dc679f3b3ca8e5b8d31f8ea07a0d834de785c7
+"json-schema@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "json-schema@npm:0.4.0"
+  checksum: 66389434c3469e698da0df2e7ac5a3281bcff75e797a5c127db7c5b56270e01ae13d9afa3c03344f76e32e81678337a8c912bdbb75101c62e487dc3778461d72
   languageName: node
   linkType: hard
 
@@ -7854,12 +7854,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.6.1":
-  version: 2.6.5
-  resolution: "node-fetch@npm:2.6.5"
+"node-fetch@npm:^2.6.7":
+  version: 2.6.7
+  resolution: "node-fetch@npm:2.6.7"
   dependencies:
     whatwg-url: ^5.0.0
-  checksum: 4e83db450718e70762882f00d96f647a7f2f3170035225934ddd5450cb1d91ef339ceb180d3687bcb0a6ed78c3fa5636ce8d3e44ec81ab59e0224ebf8965f65f
+  peerDependencies:
+    encoding: ^0.1.0
+  peerDependenciesMeta:
+    encoding:
+      optional: true
+  checksum: 8d816ffd1ee22cab8301c7756ef04f3437f18dace86a1dae22cf81db8ef29c0bf6655f3215cb0cdb22b420b6fe141e64b26905e7f33f9377a7fa59135ea3e10b
   languageName: node
   linkType: hard
 
