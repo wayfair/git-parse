@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 2.1.2 (June 28, 2022)
+
 - Upgrade `minimist` dep `^1.2.6`
 - Allow whitespace in file names for files modified, deleted, or added in parsed commit output.
 - Add yarn resolutions for node-fetch `^2.6.7` and json-schema `^0.4.0` to avoid vulnerabilities.
