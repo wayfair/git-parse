@@ -1,6 +1,6 @@
 {
   "name": "git-parse",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Turn a git repository into a javascript object.",
   "main": "dist",
   "scripts": {
