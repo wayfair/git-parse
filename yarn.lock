@@ -8479,27 +8479,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse-path@npm:^4.0.0":
-  version: 4.0.3
-  resolution: "parse-path@npm:4.0.3"
+"parse-path@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "parse-path@npm:4.0.4"
   dependencies:
     is-ssh: ^1.3.0
     protocols: ^1.4.0
     qs: ^6.9.4
     query-string: ^6.13.8
-  checksum: d1704c0027489b64838c608c3f075fe3599c18a7413fa92e7074a0157e5bcc1a4ef73e7ae9bd9dbf5fad1809137437310cc69a57e5f5130ea17226165f3e942a
+  checksum: 909e628c35baebeb3bdcaa376e2c5a21632a9094079ac55e04b3311db28219b15e517e10987dd49a13a904f2605b747b6368b0092130e0f2ff9bc5ffc40ceb63
   languageName: node
   linkType: hard
 
-"parse-url@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "parse-url@npm:6.0.0"
+"parse-url@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "parse-url@npm:6.0.2"
   dependencies:
     is-ssh: ^1.3.0
     normalize-url: ^6.1.0
-    parse-path: ^4.0.0
+    parse-path: ^4.0.4
     protocols: ^1.4.0
-  checksum: 6b680d1fdfba15fc54106c1130540bf61a415bc3085351b8609a213b2fdf551c53ec8d32703d8ea9b6c5fbf2da92ee1593c99f682032512b15ce87f9013d2a39
+  checksum: cbd11ad5e5100821aaee8ef2d05df339209e8bc87b2bdccc213bf27b85c0b50c5aee6ab96ad7401f18e0982ba913107c940bab30a8982db08337a056e667d917
   languageName: node
   linkType: hard
 
