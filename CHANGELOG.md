@@ -8,6 +8,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 - Bump minimum Node version to `14` and bump Lerna to `5.1.8`
+- Upgrade `yarn` to `3.2.2` and add `outdated` plugin
+- Major bumps:
+  - `@commitlint/cli` to `^17.0.3`
+  - `@commitlint/config-conventional` to `^17.0.3`
+  - `@types/jest` to `^28.1.6`
+  - `eslint` to `8.20.0`
+  - `eslint-plugin-flowtype` to `8.0.3`
+  - `husky` to `^8.0.1`
+  - `jest` to `^28`
+  - `pinst` to `^3.0.0`
+- Minor and patch bumps:
+  - `@babel/cli` to `^7.18.9`
+  - `@babel/core` to `^7.18.9`
+  - `@babel/eslint-parser` to `^7.18.9`
+  - `@babel/plugin-proposal-class-properties` to `^7.18.6`
+  - `@babel/plugin-proposal-object-rest-spread` to `^7.18.9`
+  - `@babel/preset-env` to `^7.18.9`
+  - `@babel/preset-typescript` to `^7.18.6`
+  - `@typescript-eslint/eslint-plugin` to `^5.30.7`
+  - `@typescript-eslint/parser` to `^5.30.7`
+  - `eslint-plugin-import` to `2.26.0`
+  - `prettier` to `^2.7.1`
+  - `typescript` to `^4.7.4`
 
 ## 2.1.2 (June 28, 2022)
 
