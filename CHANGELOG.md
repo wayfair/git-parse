@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 3.0.0 (August 8, 2022)
+
 - Bump minimum Node version to `14` and bump Lerna to `5.1.8`
 - Upgrade `yarn` to `3.2.2` and add `outdated` plugin
 - Major bumps:
