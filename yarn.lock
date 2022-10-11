@@ -15,7 +15,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:^7.19.3":
+"@babel/cli@npm:7.19.3":
   version: 7.19.3
   resolution: "@babel/cli@npm:7.19.3"
   dependencies:
@@ -81,6 +81,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/core@npm:7.19.3":
+  version: 7.19.3
+  resolution: "@babel/core@npm:7.19.3"
+  dependencies:
+    "@ampproject/remapping": ^2.1.0
+    "@babel/code-frame": ^7.18.6
+    "@babel/generator": ^7.19.3
+    "@babel/helper-compilation-targets": ^7.19.3
+    "@babel/helper-module-transforms": ^7.19.0
+    "@babel/helpers": ^7.19.0
+    "@babel/parser": ^7.19.3
+    "@babel/template": ^7.18.10
+    "@babel/traverse": ^7.19.3
+    "@babel/types": ^7.19.3
+    convert-source-map: ^1.7.0
+    debug: ^4.1.0
+    gensync: ^1.0.0-beta.2
+    json5: ^2.2.1
+    semver: ^6.3.0
+  checksum: dd883311209ad5a2c65b227daeb7247d90a382c50f4c6ad60c5ee40927eb39c34f0690d93b775c0427794261b72fa8f9296589a2dbda0782366a9f1c6de00c08
+  languageName: node
+  linkType: hard
+
 "@babel/core@npm:^7.11.6":
   version: 7.18.9
   resolution: "@babel/core@npm:7.18.9"
@@ -127,30 +150,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.19.3":
-  version: 7.19.3
-  resolution: "@babel/core@npm:7.19.3"
-  dependencies:
-    "@ampproject/remapping": ^2.1.0
-    "@babel/code-frame": ^7.18.6
-    "@babel/generator": ^7.19.3
-    "@babel/helper-compilation-targets": ^7.19.3
-    "@babel/helper-module-transforms": ^7.19.0
-    "@babel/helpers": ^7.19.0
-    "@babel/parser": ^7.19.3
-    "@babel/template": ^7.18.10
-    "@babel/traverse": ^7.19.3
-    "@babel/types": ^7.19.3
-    convert-source-map: ^1.7.0
-    debug: ^4.1.0
-    gensync: ^1.0.0-beta.2
-    json5: ^2.2.1
-    semver: ^6.3.0
-  checksum: dd883311209ad5a2c65b227daeb7247d90a382c50f4c6ad60c5ee40927eb39c34f0690d93b775c0427794261b72fa8f9296589a2dbda0782366a9f1c6de00c08
-  languageName: node
-  linkType: hard
-
-"@babel/eslint-parser@npm:^7.19.1":
+"@babel/eslint-parser@npm:7.19.1":
   version: 7.19.1
   resolution: "@babel/eslint-parser@npm:7.19.1"
   dependencies:
@@ -791,7 +791,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-class-properties@npm:^7.18.6":
+"@babel/plugin-proposal-class-properties@npm:7.18.6, @babel/plugin-proposal-class-properties@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/plugin-proposal-class-properties@npm:7.18.6"
   dependencies:
@@ -888,7 +888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-object-rest-spread@npm:^7.19.4":
+"@babel/plugin-proposal-object-rest-spread@npm:7.19.4, @babel/plugin-proposal-object-rest-spread@npm:^7.19.4":
   version: 7.19.4
   resolution: "@babel/plugin-proposal-object-rest-spread@npm:7.19.4"
   dependencies:
@@ -1593,7 +1593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.19.4":
+"@babel/preset-env@npm:7.19.4":
   version: 7.19.4
   resolution: "@babel/preset-env@npm:7.19.4"
   dependencies:
@@ -1693,7 +1693,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.18.6":
+"@babel/preset-typescript@npm:7.18.6":
   version: 7.18.6
   resolution: "@babel/preset-typescript@npm:7.18.6"
   dependencies:
@@ -1839,7 +1839,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^17.1.2":
+"@commitlint/cli@npm:17.1.2":
   version: 17.1.2
   resolution: "@commitlint/cli@npm:17.1.2"
   dependencies:
@@ -1859,7 +1859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^17.1.0":
+"@commitlint/config-conventional@npm:17.1.0":
   version: 17.1.0
   resolution: "@commitlint/config-conventional@npm:17.1.0"
   dependencies:
@@ -3766,7 +3766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/byline@npm:^4.2.33":
+"@types/byline@npm:4.2.33":
   version: 4.2.33
   resolution: "@types/byline@npm:4.2.33"
   dependencies:
@@ -3809,7 +3809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^28.1.6":
+"@types/jest@npm:28.1.6":
   version: 28.1.6
   resolution: "@types/jest@npm:28.1.6"
   dependencies:
@@ -3889,7 +3889,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/util.promisify@npm:^1.0.4":
+"@types/util.promisify@npm:1.0.4":
   version: 1.0.4
   resolution: "@types/util.promisify@npm:1.0.4"
   dependencies:
@@ -3914,7 +3914,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.40.0":
+"@typescript-eslint/eslint-plugin@npm:5.40.0":
   version: 5.40.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.40.0"
   dependencies:
@@ -3936,7 +3936,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.40.0":
+"@typescript-eslint/parser@npm:5.40.0":
   version: 5.40.0
   resolution: "@typescript-eslint/parser@npm:5.40.0"
   dependencies:
@@ -4397,7 +4397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-eslint@npm:^10.1.0":
+"babel-eslint@npm:10.1.0":
   version: 10.1.0
   resolution: "babel-eslint@npm:10.1.0"
   dependencies:
@@ -6490,31 +6490,31 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "git-parse@workspace:."
   dependencies:
-    "@babel/cli": ^7.19.3
-    "@babel/core": ^7.19.3
-    "@babel/eslint-parser": ^7.19.1
-    "@babel/plugin-proposal-class-properties": ^7.18.6
-    "@babel/plugin-proposal-object-rest-spread": ^7.19.4
-    "@babel/preset-env": ^7.19.4
-    "@babel/preset-typescript": ^7.18.6
-    "@commitlint/cli": ^17.1.2
-    "@commitlint/config-conventional": ^17.1.0
-    "@types/byline": ^4.2.33
-    "@types/jest": ^28.1.6
-    "@types/util.promisify": ^1.0.4
-    "@typescript-eslint/eslint-plugin": ^5.40.0
-    "@typescript-eslint/parser": ^5.40.0
-    babel-eslint: ^10.1.0
+    "@babel/cli": 7.19.3
+    "@babel/core": 7.19.3
+    "@babel/eslint-parser": 7.19.1
+    "@babel/plugin-proposal-class-properties": 7.18.6
+    "@babel/plugin-proposal-object-rest-spread": 7.19.4
+    "@babel/preset-env": 7.19.4
+    "@babel/preset-typescript": 7.18.6
+    "@commitlint/cli": 17.1.2
+    "@commitlint/config-conventional": 17.1.0
+    "@types/byline": 4.2.33
+    "@types/jest": 28.1.6
+    "@types/util.promisify": 1.0.4
+    "@typescript-eslint/eslint-plugin": 5.40.0
+    "@typescript-eslint/parser": 5.40.0
+    babel-eslint: 10.1.0
     byline: 5.0.0
     eslint: 8.25.0
     eslint-plugin-flowtype: 8.0.3
     eslint-plugin-import: 2.26.0
-    husky: ^8.0.1
-    jest: ^28
+    husky: 8.0.1
+    jest: 28.1.3
     lerna: 5.6.2
-    pinst: ^3.0.0
-    prettier: ^2.7.1
-    typescript: ^4.8.4
+    pinst: 3.0.0
+    prettier: 2.7.1
+    typescript: 4.8.4
     util.promisify: 1.1.1
   languageName: unknown
   linkType: soft
@@ -6943,7 +6943,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.1":
+"husky@npm:8.0.1":
   version: 8.0.1
   resolution: "husky@npm:8.0.1"
   bin:
@@ -7962,7 +7962,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^28":
+"jest@npm:28.1.3":
   version: 28.1.3
   resolution: "jest@npm:28.1.3"
   dependencies:
@@ -9620,7 +9620,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinst@npm:^3.0.0":
+"pinst@npm:3.0.0":
   version: 3.0.0
   resolution: "pinst@npm:3.0.0"
   bin:
@@ -9652,7 +9652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.7.1":
+"prettier@npm:2.7.1":
   version: 2.7.1
   resolution: "prettier@npm:2.7.1"
   bin:
@@ -11063,7 +11063,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^3 || ^4, typescript@npm:^4.8.4":
+"typescript@npm:4.8.4, typescript@npm:^3 || ^4":
   version: 4.8.4
   resolution: "typescript@npm:4.8.4"
   bin:
@@ -11083,7 +11083,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3 || ^4#~builtin<compat/typescript>, typescript@patch:typescript@^4.8.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.8.4#~builtin<compat/typescript>, typescript@patch:typescript@^3 || ^4#~builtin<compat/typescript>":
   version: 4.8.4
   resolution: "typescript@patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=f456af"
   bin:
