@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Minor and patch bumps:
+  - `@babel/cli` to `^7.19.3`
+  - `@bable/core` to `^7.19.3`
+  - `@babel/eslint-parser` to `^7.19.1`
+  - `@babel/plugin-proposal-object-rest-spread` to `^7.19.4`
+  - `@babel/preset-env` to `^7.19.4`
+  - `@commitlint/cli` to `^17.1.2`
+  - `@commitlint/config-conventional` to `^17.1.0`
+  - `@typescript-eslint/eslint-plugin` to `^5.40.0`
+  - `@typescript-eslint/parser` to `^5.40.0`
+  - `eslint` to `8.25.0`
+  - `lerna` to `5.6.2`
+  - `typescript` to `^4.8.4`
+
 ## 3.0.0 (August 8, 2022)
 
 - Bump minimum Node version to `14` and bump Lerna to `5.1.8`
