@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `eslint` to `8.25.0`
   - `lerna` to `5.6.2`
   - `typescript` to `^4.8.4`
+- update `checkoutCommit` to use `execFile` instead of `exec`. See [CVE-2021-26543](https://github.com/advisories/GHSA-m744-2jj8-vpfv) and [patch for same](https://github.com/wayfair/git-parse/pull/18/files).
 
 ## 3.0.0 (August 8, 2022)
 
