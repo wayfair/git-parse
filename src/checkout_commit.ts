@@ -26,10 +26,10 @@ const checkoutCommit = async (
     return Promise.reject(e);
   }
 
-  const args = ["checkout",hash];
-  
-  if(options.force) args.push("--force");
-  
+  const args = ["checkout", hash];
+
+  if (options.force) args.push("--force");
+
   return execFile("git", args, {
     cwd: resolvedPath,
   });
