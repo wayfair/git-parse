@@ -2,7 +2,7 @@ import promisify from "util.promisify";
 import childProcess from "child_process";
 import { validatePath, resolveHome } from "./util";
 
-const exec = promisify(childProcess.exec);
+const execFile = promisify(childProcess.execFile);
 
 export interface CheckoutCommmitOptions {
   force?: boolean | undefined;
@@ -26,7 +26,11 @@ const checkoutCommit = async (
     return Promise.reject(e);
   }
 
-  return exec(`git checkout ${hash} ${options.force ? "--force" : ""}`, {
+  const args = ["checkout", hash];
+
+  if (options.force) args.push("--force");
+
+  return execFile("git", args, {
     cwd: resolvedPath,
   });
 };
