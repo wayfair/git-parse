@@ -73,7 +73,7 @@
   "resolutions": {
     "minimist": "^1.2.6",
     "json-schema": "^0.4.0",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^3.0.0"
   },
   "jest": {
     "testMatch": [
