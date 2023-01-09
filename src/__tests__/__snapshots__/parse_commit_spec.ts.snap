@@ -1,36 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`parseCommit returns a parsed git commit 1`] = `
-Object {
+{
   "authorEmail": "mpackard@wayfair.com",
   "authorName": "Morgan Packard",
   "date": "Mon, 22 Jan 2018 16:57:54 -0500",
-  "filesAdded": Array [
-    Object {
+  "filesAdded": [
+    {
       "path": "packages/distillery/src/index.js",
     },
-    Object {
+    {
       "path": "directory/t t.md",
     },
   ],
-  "filesDeleted": Array [
-    Object {
+  "filesDeleted": [
+    {
       "path": "packages/git-parse/index.js",
     },
-    Object {
+    {
       "path": "directory/t2 t2.md",
     },
   ],
-  "filesModified": Array [
-    Object {
+  "filesModified": [
+    {
       "path": "README.md",
     },
-    Object {
+    {
       "path": "READ ME.md",
     },
   ],
-  "filesRenamed": Array [
-    Object {
+  "filesRenamed": [
+    {
       "newPath": "packages/distillery/src/__tests__/index.spec.js",
       "oldPath": "packages/git-parse/__tests__/index.spec.js",
     },

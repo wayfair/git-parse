@@ -8,10 +8,10 @@ jobs:
     name: Lint commit message
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v4  # See: https://github.com/wagoid/commitlint-github-action
+      - uses: wagoid/commitlint-github-action@v5  # See: https://github.com/wagoid/commitlint-github-action
         with:
           configFile: .commitlintrc.yml
 
@@ -20,8 +20,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 14.x
           cache: yarn
@@ -34,8 +34,8 @@ jobs:
     needs: install-node-modules
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 14.x
           cache: yarn
@@ -50,8 +50,8 @@ jobs:
     needs: install-node-modules
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 14.x
           cache: yarn
@@ -66,8 +66,8 @@ jobs:
     needs: install-node-modules
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 14.x
           cache: yarn
@@ -82,8 +82,8 @@ jobs:
     needs: install-node-modules
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 14.x
           cache: yarn

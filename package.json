@@ -1,6 +1,6 @@
 {
   "name": "git-parse",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Turn a git repository into a javascript object.",
   "main": "dist",
   "scripts": {
@@ -55,17 +55,17 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/byline": "^4.2.33",
-    "@types/jest": "^28.1.6",
+    "@types/jest": "^29.0.0",
     "@types/util.promisify": "^1.0.4",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "8.25.0",
+    "eslint": "8.31.0",
     "eslint-plugin-flowtype": "8.0.3",
     "eslint-plugin-import": "2.26.0",
     "husky": "^8.0.1",
-    "jest": "^28",
-    "lerna": "5.6.2",
+    "jest": "^29.0.0",
+    "lerna": "6.3.0",
     "pinst": "^3.0.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
@@ -73,7 +73,7 @@
   "resolutions": {
     "minimist": "^1.2.6",
     "json-schema": "^0.4.0",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^3.0.0"
   },
   "jest": {
     "testMatch": [
@@ -89,5 +89,5 @@
   "engines": {
     "node": ">=14"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.3.1"
 }
