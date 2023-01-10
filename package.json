@@ -59,7 +59,6 @@
     "@types/util.promisify": "^1.0.4",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
-    "babel-eslint": "^10.1.0",
     "eslint": "8.31.0",
     "husky": "^8.0.1",
     "jest": "^29.0.0",

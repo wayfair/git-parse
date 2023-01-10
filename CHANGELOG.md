@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Removes unused dependencies:
 - lerna
 - eslint-plugin-flowtype
+- eslint-plugin-import
 
 ## 3.0.1 (Nov 9, 2022)
 
