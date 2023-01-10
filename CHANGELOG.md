@@ -13,6 +13,7 @@ Removes unused dependencies:
 - eslint-plugin-import
 - babel-eslint
 - @babel/eslint-parser
+- @types/jest
 
 ## 3.0.1 (Nov 9, 2022)
 
