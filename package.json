@@ -54,7 +54,6 @@
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@types/byline": "^4.2.33",
-    "@types/jest": "^29.0.0",
     "@types/util.promisify": "^1.0.4",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",

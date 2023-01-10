@@ -2611,16 +2611,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.0.0":
-  version: 29.2.4
-  resolution: "@types/jest@npm:29.2.4"
-  dependencies:
-    expect: ^29.0.0
-    pretty-format: ^29.0.0
-  checksum: 9deb4756fe1b438d41ff1aae7d6c216c9e49e5fe60f539f8edb6698ffeb530ff7b25d37e223439b03602ca3a7397c9c2e53e1a39c7bd616353472fce0cc04107
-  languageName: node
-  linkType: hard
-
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.9
   resolution: "@types/json-schema@npm:7.0.9"
@@ -4085,7 +4075,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:^29.0.0, expect@npm:^29.3.1":
+"expect@npm:^29.3.1":
   version: 29.3.1
   resolution: "expect@npm:29.3.1"
   dependencies:
@@ -4352,7 +4342,6 @@ __metadata:
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.1.0
     "@types/byline": ^4.2.33
-    "@types/jest": ^29.0.0
     "@types/util.promisify": ^1.0.4
     "@typescript-eslint/eslint-plugin": ^5.40.0
     "@typescript-eslint/parser": ^5.40.0
@@ -6358,7 +6347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^29.0.0, pretty-format@npm:^29.3.1":
+"pretty-format@npm:^29.3.1":
   version: 29.3.1
   resolution: "pretty-format@npm:29.3.1"
   dependencies:
