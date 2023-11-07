@@ -2569,11 +2569,11 @@ __metadata:
   linkType: hard
 
 "@types/byline@npm:^4.2.33":
-  version: 4.2.33
-  resolution: "@types/byline@npm:4.2.33"
+  version: 4.2.36
+  resolution: "@types/byline@npm:4.2.36"
   dependencies:
     "@types/node": "*"
-  checksum: c980dc8b5a3a7240c93a38be46983613c63aee1b850fa9f5c78943587374f6894ddb6d8dea70ff79f3352cc7c42f89cf0a60eeb69d952891000854ec424e40c7
+  checksum: 6e21e69ac8936fdaad75effab3c209177dff26edf34bea919bf682768fcc9e11b0a59d309248440918d3b48791d5b74f7c896a8030e8fa38d7e368bdb2086d0b
   languageName: node
   linkType: hard
 
