@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v5  # See: https://github.com/wagoid/commitlint-github-action
+      - uses: wagoid/commitlint-github-action@v6  # See: https://github.com/wagoid/commitlint-github-action
         with:
           configFile: .commitlintrc.yml
 
