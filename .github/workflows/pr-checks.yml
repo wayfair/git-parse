@@ -2,7 +2,7 @@ name: PR Checks
 on: [push, pull_request]
 jobs:
 
-  # Checks that PR commits match the Conventional Commmit format
+  # Checks that PR commits match the Conventional Commit format
   # See: https://www.conventionalcommits.org/en/v1.0.0/
   commitlint:
     name: Lint commit message
